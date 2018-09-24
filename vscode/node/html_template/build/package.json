@@ -1,0 +1,12 @@
+{
+  "name": "blockchainstatic",
+  "version": "1.0.0",
+  "description": "区块链",
+  "author": "DarkKnight",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-watch": "^5.0.0"
+  }
+}
