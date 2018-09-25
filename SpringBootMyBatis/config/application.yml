@@ -1,0 +1,31 @@
+spring:
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+  http:
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 2MB
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/database?useSSL=false&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    username: name
+    password: password
+server:
+  port: 13001
+logging:
+  level:
+    domain:
+      name: DEBUG
+  pattern:
+    console: '%d{HH:mm:ss.SSS} [%thread] %-5level%logger{36}%n\t%msg%n'
+mybatis:
+  config-location: classpath:mybatis-config.xml
